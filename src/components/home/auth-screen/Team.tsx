@@ -10,28 +10,40 @@ interface TeamProps {
 
 const teamList: TeamProps[] = [
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=35",
-		name: "Sarah Thompson",
+		imageUrl: "/nipuna.png",
+		name: "Nipuna",
 		position: "Farm Manager",
-		description: "Sarah ensures the smooth operation of the farm and ensuring the well-being of all our horses. ",
+		description: "Nipuna is our farm manager, responsible for the day-to-day operations of the farm. ",
 	},
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=60",
-		name: "James Wilson",
+		imageUrl: "/devin.JPG",
+		name: "Devin",
 		position: "Head Trainer",
-		description: "James is our expert in horse training and riding instruction with over 15 years of experience",
+		description: "Devin is our head trainer, with over 20 years of experience working with horses. ",
 	},
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=36",
-		name: "Dr. Emily Carter",
-		position: "Equine Veterinarian",
-		description: "Dr. Carter is our resident veterinarian, dedicated to maintaining the health of our horses.",
+		imageUrl: "/pasindu.JPG",
+		name: "Pasindu ",
+		position: "Riding Instructor",
+		description: "Pasindu is our riding instructor, with a passion for teaching riders of all ages and abilities. ",
 	},
 	{
-		imageUrl: "https://i.pravatar.cc/150?img=17",
-		name: "Michael Ramirez",
-		position: "Groom and Stable Hand",
-		description: "Michael is responsible for the daily care of our horses, including feeding and grooming. ",
+		imageUrl: "/sewmina.JPG",
+		name: "Sewmina",
+		position: "Veterinarian",
+		description: "Dinuka is our on-site veterinarian, providing expert care for our horses.",
+	},
+	{
+		imageUrl: "/malaka.JPG",
+		name: "Malaka",
+		position: "Groom",
+		description: "Malaka is our groom, responsible for the daily care and grooming of our horses.",
+	},
+	{
+		imageUrl: "/janith.jpg",
+		name: "Janith",
+		position: "Farrier",
+		description: "Janith is our farrier, ensuring that our horses' hooves are healthy and well-maintained.",
 	},
 ];
 
