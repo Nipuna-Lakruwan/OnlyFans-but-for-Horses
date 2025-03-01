@@ -31,7 +31,7 @@ const teamList: TeamProps[] = [
 		imageUrl: "/sewmina.JPG",
 		name: "Sewmina",
 		position: "Veterinarian",
-		description: "Dinuka is our on-site veterinarian, providing expert care for our horses.",
+		description: "Sewmina is our on-site veterinarian, providing expert care for our horses.",
 	},
 	{
 		imageUrl: "/malaka.JPG",
