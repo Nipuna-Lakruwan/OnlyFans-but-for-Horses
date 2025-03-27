@@ -6,7 +6,7 @@ import { User } from "@prisma/client";
 import { useQuery } from "@tanstack/react-query";
 import { getPostsAction } from "./actions";
 
-const Posts = ({ isSubscribed, admin }: { isSubscribed: boolean; admin: User }) => {
+const Posts = ({ isSubscribed, admin }: { isSubscribed: boolean; admin: User | null }) => {
 	const { data: posts, isLoading } = useQuery({
 		queryKey: ["posts"],
 		queryFn: async () => await getPostsAction(),
@@ -35,7 +35,7 @@ const Posts = ({ isSubscribed, admin }: { isSubscribed: boolean; admin: User }) 
 						<p className='text-center'>
 							Stay tuned for more posts from{" "}
 							<span className='text-primary font-semibold text-xl'>OnlyHorse.</span> You can subscribe to
-							access exclusive content when it's available.
+							access exclusive content when it is available.
 						</p>
 					</div>
 				</div>

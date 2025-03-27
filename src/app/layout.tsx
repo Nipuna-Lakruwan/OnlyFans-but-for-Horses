@@ -22,16 +22,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body className={inter.className}>
-				<ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-					<div className='h-screen flex flex-col'>
-						<div className='flex-1'>
-							<TanStackProvider>{children}</TanStackProvider>
-						</div>
-						<Footer />
-					</div>
-				</ThemeProvider>
-				<Toaster />
+			<body suppressHydrationWarning={true}>
+				<TanStackProvider>
+					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+						{children}
+					</ThemeProvider>
+				</TanStackProvider>
 			</body>
 		</html>
 	);

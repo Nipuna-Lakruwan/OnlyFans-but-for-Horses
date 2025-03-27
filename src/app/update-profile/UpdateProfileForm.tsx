@@ -15,8 +15,6 @@ import { useToast } from "@/components/ui/use-toast";
 const UpdateProfileForm = () => {
 	const [mediaUrl, setMediaUrl] = useState("");
 	const [name, setName] = useState("");
-	const [email, setEmail] = useState("");
-	const [profileImage, setProfileImage] = useState("");
 
 	const { toast } = useToast();
 
@@ -86,7 +84,7 @@ const UpdateProfileForm = () => {
 						<TooltipProvider>
 							<Tooltip>
 								<TooltipTrigger className='w-full' type='button'>
-									<Input disabled value={userProfile?.email} className='my-2' />
+								<Input disabled value={userProfile?.email || ""} className='my-2' />
 								</TooltipTrigger>
 								<TooltipContent>
 									<p className='text-sm'>For security reasons, your email cannot be changed. 😥</p>
